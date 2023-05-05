@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [],
+  content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
 
@@ -18,10 +18,8 @@ module.exports = {
             50 : "#80ff00",
             10:"#bfff00",
           },
-
           main:"#ff0000",
         },
-
       },
     },
   },
