@@ -7,8 +7,8 @@ import { NavLink } from 'react-router-dom';
 export default class Header extends Component {
   render() {
     const activeLink="border-b-4 cursor-pointer hover:border-accent-main text-accent-main";
-    // const activeLink2="border-4 cursor-pointer hover:border-accent-main rounded-full";
-    const normalLink="cursor-pointer hover:bg-violet-400";
+     const activeLink2="border-2 cursor-pointer hover:border-accent-main rounded-full";
+    const normalLink="cursor-pointer hover:bg-red-100 hover:text-accent-main";
 
     return (
         <div className=" w-11/12 h-13 text-black fixed p-4 z-10 m-5 rounded-full snap-center ml-16 shadow-xl border-2">
@@ -54,9 +54,23 @@ export default class Header extends Component {
               <div className="w-72 ">
                   <nav className="flex w-full font-heading pl-10 justify-end space-x-4">
 
-                   <ShoppingCartIcon />
-                   <LoginIcon />
-                  <SearchIcon />
+
+                  <NavLink to={"/cart"}
+                     className={({isActive})=>
+                       isActive?activeLink2:normalLink
+                     }><ShoppingCartIcon /></NavLink>
+                   
+
+                   <NavLink to={"/login"}
+                   className={({isActive})=>
+                      isActive?activeLink2:normalLink
+                   }><LoginIcon /></NavLink>
+                   
+                   <NavLink to={"/search"}
+                   className={({isActive})=>
+                      isActive?activeLink2:normalLink
+                   }><SearchIcon /></NavLink>
+                  
                   </nav>
               </div>
           </div>
