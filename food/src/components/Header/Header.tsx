@@ -11,11 +11,11 @@ export default class Header extends Component {
     const normalLink="cursor-pointer hover:bg-red-100 hover:text-accent-set-200";
 
     return (
-        <div className=" w-11/12 h-13 text-black fixed p-4 z-10 m-5 rounded-full snap-center ml-16 shadow-xl border-2">
+        <div className=" w-11/12 h-13 text-black fixed p-4 z-10 m-2 rounded-full snap-center ml-16 shadow-xl border-2 bg-white">
       <div className="w-full h-full">
           <div className="flex w-full h-full ">
               <div className="w-1/3  items-center ">
-                  <h1 className="font-babylonica text-2xl md:font-bold  text-accent-set-200">Food.com</h1>
+                  <h1 className="font-babylonica text-3xl md:font-bold  text-accent-set-200">Food.com</h1>
               </div>
               <div className="w-2/3">
                   <nav className="flex w-full space-x-20 md:font-bold text-xl  font-heading pl-10">
